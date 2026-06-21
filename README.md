@@ -1,6 +1,21 @@
-# OmniAI v2 – Ultimate Personal Assistant
+<p align="center">
+  <img src="public/banner.png" alt="OmniAI Banner" width="100%" />
+</p>
 
-A fully-featured personal assistant with RBAC, real AI, music upload, and smart home voice control.
+<h1 align="center">OmniAI v2 – Ultimate Personal Assistant</h1>
+
+<p align="center">
+  A fully-featured personal assistant with RBAC, real AI, music upload, and smart home voice control.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/Claude-AI-7C3AED?style=for-the-badge&logo=anthropic&logoColor=white" />
+  <img src="https://img.shields.io/badge/Express-4-000000?style=for-the-badge&logo=express&logoColor=white" />
+</p>
+
+---
 
 ## 🚀 Quick Start
 
