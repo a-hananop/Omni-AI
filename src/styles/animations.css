@@ -1,0 +1,73 @@
+/* ─── Keyframes ─────────────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-12px); }
+  to   { opacity: 1; transform: translateX(0);     }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1);    }
+}
+@keyframes bounce {
+  0%, 80%, 100% { transform: translateY(0);  }
+  40%           { transform: translateY(-7px); }
+}
+@keyframes spin {
+  from { transform: rotate(0deg);   }
+  to   { transform: rotate(360deg); }
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1;   }
+  50%       { opacity: 0.45; }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 8px rgba(56,189,248,0.3);  }
+  50%       { box-shadow: 0 0 20px rgba(56,189,248,0.6); }
+}
+
+/* ─── Utility Animation Classes ─────────────────────────────────────── */
+.anim-fade-up   { animation: fadeUp   0.4s var(--ease) both; }
+.anim-fade-in   { animation: fadeIn   0.3s var(--ease) both; }
+.anim-scale-in  { animation: scaleIn  0.3s var(--ease) both; }
+.anim-slide-left{ animation: slideInLeft 0.35s var(--ease) both; }
+
+/* Page view transition */
+.page-enter {
+  animation: fadeUp 0.38s var(--ease) both;
+}
+
+/* Stagger helpers */
+.stagger-1 { animation-delay: 0.05s; }
+.stagger-2 { animation-delay: 0.10s; }
+.stagger-3 { animation-delay: 0.15s; }
+.stagger-4 { animation-delay: 0.20s; }
+.stagger-5 { animation-delay: 0.25s; }
+
+/* Spin utility */
+.spin { animation: spin 0.9s linear infinite; }
+
+/* Typing dots */
+.typing-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--cyan);
+  animation: bounce 1.3s infinite;
+  display: inline-block;
+}
+.typing-dot:nth-child(2) { animation-delay: 0.18s; }
+.typing-dot:nth-child(3) { animation-delay: 0.36s; }
